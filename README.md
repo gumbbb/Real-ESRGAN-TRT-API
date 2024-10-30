@@ -1,4 +1,4 @@
-# Real-ESRGAN realesr-general-x4v3 model
+# Real-ESRGAN model with Tensor RT API implement
 
 ## How to Run
 0. Replace YOUR_TENSORRT_INCLUDE_DIR and YOUR_TENSORRT_LIB_DIR in CMakeLists.txt with your TensorRT include and lib directories.
@@ -26,7 +26,7 @@ python gen_wts.py
 // a file 'real-esrgan.wts' will be generated.
 ```
 
-**Be aware that if you need both realesr-general-x4v3.pth and realesr-general-wdn-x4v3.pth, please write a Python script to average all weights of realesr-general-x4v3.pth and realesr-general-wdn-x4v3.pth (from {xinntao}/Real-ESRGAN), then save it as a .pth file, and use this new file to generate a .wts file.**
+
 
 2. build tensorrtx/real-esrgan-general-x4v3 and run
 
